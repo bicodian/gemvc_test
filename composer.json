@@ -1,0 +1,52 @@
+{
+    "require": {
+        "gemvc/library": "^5.0",
+        "hyperf/db-connection": "^3.1",
+        "hyperf/database": "^3.1",
+        "hyperf/di": "^3.1",
+        "hyperf/pool": "^3.1",
+        "hyperf/config": "^3.1",
+        "hyperf/utils": "^3.1",
+        "hyperf/engine": "^2.15",
+        "hyperf/context": "^3.1",
+        "hyperf/coroutine": "^3.1",
+        "hyperf/support": "^3.1",
+        "hyperf/serializer": "^3.1",
+        "hyperf/coordinator": "^3.1",
+        "hyperf/codec": "^3.1",
+        "hyperf/code-parser": "^3.1",
+        "hyperf/stdlib": "^3.1",
+        "hyperf/pipeline": "^3.1",
+        "hyperf/event": "^3.1",
+        "hyperf/model-listener": "^3.1",
+        "hyperf/framework": "^3.1",
+        "hyperf/engine-contract": "^1.14",
+        "nesbot/carbon": "^2.73",
+        "carbonphp/carbon-doctrine-types": "^3.2",
+        "doctrine/inflector": "^2.1",
+        "doctrine/instantiator": "^1.5",
+        "fig/http-message-util": "^1.1",
+        "graham-campbell/result-type": "^1.1",
+        "php-di/phpdoc-reader": "^2.2",
+        "phpoption/phpoption": "^1.9",
+        "psr/clock": "^1.0",
+        "psr/container": "^2.0",
+        "psr/event-dispatcher": "^1.0",
+        "psr/log": "^3.0",
+        "symfony/deprecation-contracts": "^3.6",
+        "symfony/finder": "^6.4",
+        "symfony/polyfill-ctype": "^1.33",
+        "symfony/polyfill-mbstring": "^1.33",
+        "symfony/polyfill-php80": "^1.33",
+        "symfony/translation": "^6.4",
+        "symfony/translation-contracts": "^3.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\Api\\": "app/api/",
+            "App\\Controller\\": "app/controller/",
+            "App\\Model\\": "app/model/",
+            "App\\Table\\": "app/table/"
+        }
+    }
+}
