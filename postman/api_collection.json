@@ -1,0 +1,405 @@
+{
+  "info": {
+    "name": "API Documentation",
+    "_postman_id": "1764091509069",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "index",
+      "description": "",
+      "item": [
+        {
+          "name": "index",
+          "request": {
+            "method": "GET",
+            "description": "test if Gemvc successfully installed and Swoole Server running",
+            "url": {
+              "raw": "{{base_url}}/index/index",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "index",
+                "index"
+              ],
+              "query": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "product",
+      "description": "",
+      "item": [
+        {
+          "name": "create",
+          "request": {
+            "method": "POST",
+            "description": "Create new Product in database",
+            "url": {
+              "raw": "{{base_url}}/product/create",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "product",
+                "create"
+              ],
+              "query": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "name",
+                  "value": "",
+                  "type": "text",
+                  "description": "Type: string (Required)"
+                },
+                {
+                  "key": "description",
+                  "value": "",
+                  "type": "text",
+                  "description": "Type: string (Required)"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "read",
+          "request": {
+            "method": "GET",
+            "description": "Get Product by id from database",
+            "url": {
+              "raw": "{{base_url}}/product/read",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "product",
+                "read"
+              ],
+              "query": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ]
+          }
+        },
+        {
+          "name": "update",
+          "request": {
+            "method": "POST",
+            "description": "Update existing Product in database",
+            "url": {
+              "raw": "{{base_url}}/product/update",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "product",
+                "update"
+              ],
+              "query": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "id",
+                  "value": "",
+                  "type": "text",
+                  "description": "Type: int (Required)"
+                },
+                {
+                  "key": "name",
+                  "value": "",
+                  "type": "text",
+                  "description": "Type: string"
+                },
+                {
+                  "key": "description",
+                  "value": "",
+                  "type": "text",
+                  "description": "Type: string"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "delete",
+          "request": {
+            "method": "POST",
+            "description": "Delete Product from database",
+            "url": {
+              "raw": "{{base_url}}/product/delete",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "product",
+                "delete"
+              ],
+              "query": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "id",
+                  "value": "",
+                  "type": "text",
+                  "description": "Type: int (Required)"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "list",
+          "request": {
+            "method": "GET",
+            "description": "Get list of all Products with filtering and sorting",
+            "url": {
+              "raw": "{{base_url}}/product/list",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "product",
+                "list"
+              ],
+              "query": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "user",
+      "description": "",
+      "item": [
+        {
+          "name": "create",
+          "request": {
+            "method": "POST",
+            "description": "Create new User in database",
+            "url": {
+              "raw": "{{base_url}}/user/create",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "user",
+                "create"
+              ],
+              "query": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "name",
+                  "value": "",
+                  "type": "text",
+                  "description": "Type: string (Required)"
+                },
+                {
+                  "key": "description",
+                  "value": "",
+                  "type": "text",
+                  "description": "Type: string (Required)"
+                },
+                {
+                  "key": "email",
+                  "value": "",
+                  "type": "text",
+                  "description": "Type: email (Required)"
+                },
+                {
+                  "key": "password",
+                  "value": "",
+                  "type": "text",
+                  "description": "Type: string (Required)"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "read",
+          "request": {
+            "method": "GET",
+            "description": "Get User by id from database",
+            "url": {
+              "raw": "{{base_url}}/user/read",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "user",
+                "read"
+              ],
+              "query": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ]
+          }
+        },
+        {
+          "name": "update",
+          "request": {
+            "method": "POST",
+            "description": "Update existing User in database",
+            "url": {
+              "raw": "{{base_url}}/user/update",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "user",
+                "update"
+              ],
+              "query": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "id",
+                  "value": "",
+                  "type": "text",
+                  "description": "Type: int (Required)"
+                },
+                {
+                  "key": "name",
+                  "value": "",
+                  "type": "text",
+                  "description": "Type: string"
+                },
+                {
+                  "key": "description",
+                  "value": "",
+                  "type": "text",
+                  "description": "Type: string"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "delete",
+          "request": {
+            "method": "POST",
+            "description": "Delete User from database",
+            "url": {
+              "raw": "{{base_url}}/user/delete",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "user",
+                "delete"
+              ],
+              "query": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "id",
+                  "value": "",
+                  "type": "text",
+                  "description": "Type: int (Required)"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "list",
+          "request": {
+            "method": "GET",
+            "description": "Get list of all Users with filtering and sorting",
+            "url": {
+              "raw": "{{base_url}}/user/list",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "user",
+                "list"
+              ],
+              "query": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
